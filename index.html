@@ -50,16 +50,21 @@
 	    <div style="display:none;" id="menu_lateral">
 		    <div style="background:#01adb1; position:fixed; top:0px; left:0px; width:280px; height:100%; z-index:99999;">
 			    <div style="height:100px; background:url(img/logo_jc2.png) center center no-repeat; background-size:60px;"></div>
-				<div class="menu-lateral-item">Agenda</div>
-				<div class="menu-lateral-item">Mensagens</div>
-				<div class="menu-lateral-item">Aniversariantes do Mês</div>
-				<div class="menu-lateral-item">Provas</div>
-				<div class="menu-lateral-item">Pace e Velocidade</div>
-				<div class="menu-lateral-item">Tabela de Ritmos</div>
-				<div class="menu-lateral-item">Conversor de Distancia</div>
-				<div class="menu-lateral-item">IMC</div>
-				<div class="menu-lateral-item">Avaliação Física</div>
-				<div class="menu-lateral-item">Preferências</div>
+				<div class="menu-lateral-item" id="menu-agenda">Agenda</div>
+				<div class="menu-lateral-item" id="menu-mensagens">Mensagens</div>
+				<div class="menu-lateral-item" id="menu-aniversarios">Aniversariantes do Mês</div>
+				<div class="menu-lateral-item" id="menu-provas">Provas</div>
+				<div class="menu-lateral-item" id="menu-calculadora">
+					Calculadoras
+					<div style="margin:10px 0px -10px 0px; background-color:rgba(0,0,0,0.05); display:none;" id="submenu-calculadora">
+						<div class="menu-lateral-item" id="menu-pace">Pace e Velocidade</div>
+						<div class="menu-lateral-item" id="menu-tabela">Tabela de Ritmos</div>
+						<div class="menu-lateral-item" id="menu-conversor">Conversor de Distancia</div>
+						<div class="menu-lateral-item" id="menu-imc">IMC</div>
+					</div>
+				</div>
+				<div class="menu-lateral-item" id="menu-avaliacao">Avaliação Física</div>
+				<div class="menu-lateral-item" id="menu-preferencias">Preferências</div>
 		    </div>
 		    <div style="background-color:rgba(0,0,0,0.8); position:fixed; top:0px; right:0px; width:calc(100% - 280px); height:100%; z-index:99999;" id="fechar_menu"></div>
 	    </div>
@@ -76,6 +81,7 @@
 				var jaFicouOffline = 0;
 				
 				$('#fechar_menu').click(function(){ $('#menu_lateral').hide(); });
+				$('#menu-calculadora').click(function(){ $('#submenu-calculadora').toggle(); });
 				
 				document.addEventListener("deviceready", onDeviceReady, true);
 				document.addEventListener("online", onOnLine, true);
