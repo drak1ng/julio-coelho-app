@@ -80,6 +80,17 @@
 				
 				var jaFicouOffline = 0;
 				
+				$('#menu-agenda').click(function(){ $('#menu_lateral').hide(); $.mobile.changePage("./paginas/agenda.html", { transition: "none", changeHash: false }); });
+				$('#menu-mensagens').click(function(){ $('#menu_lateral').hide(); $.mobile.changePage("./paginas/mensagens.html", { transition: "none", changeHash: false }); });
+				$('#menu-aniversarios').click(function(){ $('#menu_lateral').hide(); $.mobile.changePage("./paginas/aniversarios.html", { transition: "none", changeHash: false }); });
+				$('#menu-pace').click(function(){ $('#menu_lateral').hide(); $.mobile.changePage("./paginas/calculadora-pace.html", { transition: "none", changeHash: false }); });
+				$('#menu-tabela').click(function(){ $('#menu_lateral').hide(); $.mobile.changePage("./paginas/calculadora-tabela.html", { transition: "none", changeHash: false }); });
+				$('#menu-conversor').click(function(){ $('#menu_lateral').hide(); $.mobile.changePage("./paginas/calculadora-conversor.html", { transition: "none", changeHash: false }); });
+				$('#menu-imc').click(function(){ $('#menu_lateral').hide(); $.mobile.changePage("./paginas/calculadora-imc.html", { transition: "none", changeHash: false }); });
+				$('#menu-avaliacao').click(function(){ $('#menu_lateral').hide(); $.mobile.changePage("./paginas/avaliacao.html", { transition: "none", changeHash: false }); });
+				$('#menu-preferencias').click(function(){ $('#menu_lateral').hide(); $.mobile.changePage("./paginas/preferencias.html", { transition: "none", changeHash: false }); });
+				
+				
 				$('#fechar_menu').click(function(){ $('#menu_lateral').hide(); });
 				$('#menu-calculadora').click(function(){ $('#submenu-calculadora').toggle(); });
 				
