@@ -34,10 +34,11 @@
     <body>
 	    
 	    <div data-role="page">
-			<div class="topo">
+		    <div class="topo">
 			    <div class="logotipo">
+				    <div class='btmenu-topo'><i class="fa fa-bars" aria-hidden="true"></i></div>
 				    <div class='perfil-topo'></div>
-				    <div style="margin:0px 80px; text-align:center; color:#FFF; font-family:'roboto';" id="preferencias-titulo"><img src="../img/justrun_logo.png" alt="JUST RUN" width="100"></div>
+				    <div style="margin:0px 80px; text-align:center; color:#FFF; font-family:'roboto';" id="preferencias-titulo"><img src="../img/logo_jc.png" alt="Equipe Julio Coelho" width="100"></div>
 				</div>
 		    </div>
 
@@ -50,13 +51,6 @@
 				</div>
 			</div>
 			
-			<div class="botoes-rodape">
-				<div class="botoes-rodape1" id="preferencias-rodape1"><i class="fa fa-home" aria-hidden="true"></i>INÍCIO</div>
-				<div class="botoes-rodape2" id="preferencias-rodape2"><i class="fa fa-star-o" aria-hidden="true"></i>FAVORITOS</div>
-				<div class="botoes-rodape3" id="preferencias-rodape3"><i class="fa fa-play-circle-o" aria-hidden="true"></i>TREINOS</div>
-				<div class="botoes-rodape4" id="preferencias-rodape4" style="color:#c30b19;"><i class="fa fa-cogs" aria-hidden="true"></i>AJUSTES</div>
-			</div>
-			
 			<script>
 				
 				var tipo_usuarios = window.localStorage.getItem('tipo_usuarios');
@@ -67,34 +61,8 @@
 				if(foto_usuarios!=""){
 					$('.perfil-topo').css('background-image','url('+foto_usuarios+')');
 				}
-
-				$("#bt-preferencias-voltar").click(function(){
-					$.mobile.changePage("home.html", { transition: "fade", changeHash: false });
-				});
 				
 				$.get("http://equipejuliocoelho.com.br/app_api/configuracao.php", function(data){ $("#preferencias-conteudo").html(data); });
-				
-				
-				
-				$('#preferencias-rodape1').click(function(){
-					$.mobile.changePage("home.html", { transition: "fade", changeHash: false });
-				});
-				
-				$('#preferencias-rodape2').click(function(){
-					$.mobile.changePage("favoritos.html", { transition: "fade", changeHash: false });
-				});
-				
-				$('#preferencias-rodape3').click(function(){
-					$.mobile.changePage("treinos.html", { transition: "fade", changeHash: false });
-				});
-				
-				$('#preferencias-rodape4').click(function(){
-
-				});
-				
-				$('.perfil-topo').click(function(){
-					$.mobile.changePage("perfil.html", { transition: "fade", changeHash: false });
-				});
 				
 			</script>
 			
