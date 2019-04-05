@@ -41,8 +41,26 @@
 		<script type="text/javascript" src="js/rating.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS43qBsKsxeRK93aMPtN4eQaaQk0Lg60g"></script>
+		<style>
+			.menu-lateral-item	{ text-align:center; color:#FFF; padding:10px 0px; border-top:1px solid #FFF; border-color:rgba(255,255,255,0.2); font-size:13px; }
+		</style>
 	</head>
     <body>
+    <body>
+	    <div style="background:#01adb1; position:fixed; top:0px; left:0px; width:280px; height:100%; z-index:999;" id="menu_lateral">
+		    <div style="height:100px; background:url(../img/logo_jc2.png) center center no-repeat; background-size:60px;"></div>
+				<div class="menu-lateral-item">Agenda</div>
+				<div class="menu-lateral-item">Mensagens</div>
+				<div class="menu-lateral-item">Aniversariantes do Mês</div>
+				<div class="menu-lateral-item">Provas</div>
+				<div class="menu-lateral-item">Pace e Velocidade</div>
+				<div class="menu-lateral-item">Tabela de Ritmos</div>
+				<div class="menu-lateral-item">Conversor de Distancia</div>
+				<div class="menu-lateral-item">IMC</div>
+				<div class="menu-lateral-item">Avaliação Física</div>
+				<div class="menu-lateral-item">Preferências</div>
+	    </div>
+	    
 	    <div style='display:none;'><iframe width='320' height='30' id='iframe_foto' name='iframe_foto' src='' frameborder='0' allowfullscreen></iframe></div>
 		<div id="checarConexao" style="width:100%; height:100%; position:fixed; top:0px; left:0px; z-index:99999; background-color:rgba(0,0,0,0.9); text-align:center; color:#FFF; display:none;"><br><br><br><br><img src="./img/warning.png" width="200"><br><br><br><br>SEM CONEXÃO NO MOMENTO!</div>
 		<div id="aguardePagamento" style="width:100%; height:100%; position:fixed; top:0px; left:0px; z-index:99999; background-color:rgba(0,0,0,0.9); text-align:center; color:#FFF; display:none;"><br><br><br><br><br><br><br><br>AGUARDE!</div>
