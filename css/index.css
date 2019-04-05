@@ -58,8 +58,8 @@ body {
                                    /* offset horizontal: half of text area width */
 }
 
-.btmenu-topo			{ width:40px; height:40px; float:left; text-align:center; color:#000; font-size:20px; }
-.perfil-topo			{ width:40px; height:40px; float:right; border-radius:20px; background:url(../img/perfil.png) center center no-repeat #000; background-size:cover; }
+.btmenu-topo			{ width:40px; height:40px; float:left; text-align:center; color:#000; font-size:24px; }
+.perfil-topo			{ width:38px; height:38px; float:right; border-radius:20px; background:url(../img/perfil.png) center center no-repeat #000; background-size:cover; }
 
 .menu-container { width:100%; height:100%; position:fixed; top:0px; left:0px; background-color:rgba(0,0,0,0.7); z-index:9999; display:none; }
 .menu-container-externo { width:calc(100% - 200px); height:100%; float:left;  }
