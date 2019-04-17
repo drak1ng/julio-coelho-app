@@ -4,13 +4,13 @@
 	id        = "br.com.equipejuliocoelho.app"
 	versionCode="100" 
 	version   = "1.0.0">
-	<name>Equipe Julio Coelhor</name>
+	<name>Julio Coelho</name>
 	<description>
-		Equipe Julio Coelhor
+		Equipe Julio Coelho
 	</description>
 
 	<author href="http://equipejuliocoelho.com.br" email="contato@equipejuliocoelho.com.br">
-		Equipe Julio Coelhor
+		Equipe Julio Coelho
 	</author>
 	
 	<platform name="android">
