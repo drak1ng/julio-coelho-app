@@ -67,6 +67,7 @@
 				
 				$.get("http://equipejuliocoelho.com.br/app_api/calculadora_imc.php", { id_usuarios:id_usuarios }, function(data){ $("#calculadora-imc-conteudo").html(data); });
 				
+				$('.perfil-topo').click(function(){ $.mobile.changePage("preferencias.html", { transition: "fade", changeHash: false }); });
 				$('.btmenu-topo').click(function(){ $('#menu_lateral').show(); });
 				
 			</script>

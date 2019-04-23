@@ -67,6 +67,7 @@
 				
 				$.get("http://equipejuliocoelho.com.br/app_api/mensagens.php", { id_usuarios:id_usuarios }, function(data){ $("#mensagens-conteudo").html(data); });
 				
+				$('.perfil-topo').click(function(){ $.mobile.changePage("preferencias.html", { transition: "fade", changeHash: false }); });
 				$('.btmenu-topo').click(function(){ $('#menu_lateral').show(); });
 				
 			</script>

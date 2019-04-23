@@ -68,6 +68,7 @@
 				
 				$.get("http://equipejuliocoelho.com.br/app_api/mensagens-interna.php", { id_usuarios:id_usuarios, mensagem_id:mensagem_id }, function(data){ $("#mensagens-interna-conteudo").html(data); });
 				
+				$('.perfil-topo').click(function(){ $.mobile.changePage("preferencias.html", { transition: "fade", changeHash: false }); });
 				$('.btmenu-topo').click(function(){ $('#menu_lateral').show(); });
 				
 			</script>

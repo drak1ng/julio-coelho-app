@@ -67,7 +67,8 @@
 				window.localStorage.setItem('url_voltar','home.html');
 				
 				$.get("http://equipejuliocoelho.com.br/app_api/agenda-interna.php", { id_usuarios:id_usuarios, treino_id:treino_id }, function(data){ $("#agenda-interna-conteudo").html(data); });
-				
+
+				$('.perfil-topo').click(function(){ $.mobile.changePage("preferencias.html", { transition: "fade", changeHash: false }); });
 				$('.btmenu-topo').click(function(){ $('#menu_lateral').show(); });
 				
 			</script>
