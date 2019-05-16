@@ -43,6 +43,7 @@
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS43qBsKsxeRK93aMPtN4eQaaQk0Lg60g"></script>
 		<style>
 			.menu-lateral-item	{ text-align:left; color:#FFF; padding:20px 20px; border-top:1px solid #FFF; border-color:rgba(255,255,255,0.2); font-size:15px; }
+			.menu-lateral-item i	{ display:block; float:left; width:80px; }
 		</style>
 	</head>
     <body>
@@ -50,22 +51,22 @@
 	    <div style="display:none;" id="menu_lateral">
 		    <div style="background:#01adb1; position:fixed; top:0px; left:0px; width:280px; height:100%; z-index:99999; overflow:scroll;">
 			    <div style="height:100px; background:url(img/logo_jc2.png) center center no-repeat; background-size:60px;"></div>
-				<div class="menu-lateral-item" id="menu-home">Início</div>
-				<div class="menu-lateral-item" id="menu-agenda">Agenda</div>
-				<div class="menu-lateral-item" id="menu-mensagens">Boletins</div>
-				<div class="menu-lateral-item" id="menu-aniversarios">Aniversariantes do Mês</div>
-				<div class="menu-lateral-item" id="menu-provas">Provas</div>
+				<div class="menu-lateral-item" id="menu-home"><i class="fal fa-home-lg"></i>Início</div>
+				<div class="menu-lateral-item" id="menu-agenda"><i class="fal fa-calendar-day"></i>Agenda</div>
+				<div class="menu-lateral-item" id="menu-mensagens"><i class="fal fa-newspaper"></i>Boletins</div>
+				<div class="menu-lateral-item" id="menu-aniversarios"><i class="fal fa-birthday-cake"></i>Aniversariantes do Mês</div>
+				<div class="menu-lateral-item" id="menu-provas"><i class="fal fa-medal"></i>Provas</div>
 				<div class="menu-lateral-item" id="menu-calculadora">
 					Calculadoras
 					<div style="margin:20px -20px -20px -20px; background-color:rgba(0,0,0,0.05); display:none;" id="submenu-calculadora">
-						<div class="menu-lateral-item" id="menu-pace">Pace e Velocidade</div>
-						<div class="menu-lateral-item" id="menu-tabela">Tabela de Ritmos</div>
-						<div class="menu-lateral-item" id="menu-conversor">Conversor de Distancia</div>
-						<div class="menu-lateral-item" id="menu-imc">IMC</div>
+						<div class="menu-lateral-item" id="menu-pace"><i class="far fa-running"></i>Pace e Velocidade</div>
+						<div class="menu-lateral-item" id="menu-tabela"><i class="fal fa-table"></i>Tabela de Ritmos</div>
+						<div class="menu-lateral-item" id="menu-conversor"><i class="fal fa-repeat-alt"></i>Conversor de Distancia</div>
+						<div class="menu-lateral-item" id="menu-imc"><i class="fal fa-weight"></i>IMC</div>
 					</div>
 				</div>
-				<div class="menu-lateral-item" id="menu-avaliacao">Avaliação Física</div>
-				<div class="menu-lateral-item" id="menu-preferencias">Preferências</div>
+				<div class="menu-lateral-item" id="menu-avaliacao"><i class="fal fa-user-md"></i>Avaliação Física</div>
+				<div class="menu-lateral-item" id="menu-preferencias"><i class="fal fa-cogs"></i>Preferências</div>
 		    </div>
 		    <div style="background-color:rgba(0,0,0,0.8); position:fixed; top:0px; right:0px; width:calc(100% - 280px); height:100%; z-index:99999;" id="fechar_menu"></div>
 	    </div>
