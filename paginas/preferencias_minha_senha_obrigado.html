@@ -38,7 +38,7 @@
 		    <div class="topo">
 			    <div class="logotipo">
 				    <div class='perfil-topo'></div>
-				    <div style="margin:0px 80px; text-align:center; color:#FFF; font-family:'roboto';" id="preferencias-senha-obrigado-titulo"><img src="../img/logo_jc.png" alt="Equipe Julio Coelho" width="100"></div>
+				    <div style="margin:0px 80px; text-align:center; color:#FFF; font-family:'roboto';" id="preferencias-senha-obrigado-titulo"><img src="../img/logo_jc.png" alt="Equipe Julio Coelho" width="100" id='preferencias-senha-obrigado-titulo-imagem'></div>
 				</div>
 		    </div>
 
@@ -66,6 +66,8 @@
 				
 				$('.perfil-topo').click(function(){ $.mobile.changePage("preferencias.html", { transition: "fade", changeHash: false }); });
 				$('.btmenu-topo').click(function(){ $('#menu_lateral').show(); });
+				
+				$('#preferencias-senha-obrigado-titulo-imagem').click(function(){ $.mobile.changePage("home.html", { transition: "fade", changeHash: false }); });
 				
 			</script>
 		
