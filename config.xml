@@ -103,6 +103,7 @@
 	
 	<gap:plugin name="cordova-plugin-dialogs" source="npm"  />
 	<gap:plugin name="cordova-plugin-device" source="npm" />
+	<gap:plugin name="cordova-open" source="npm"  />
 	
 	<gap:plugin name="cordova-plugin-screen-orientation" source="npm" />
 	
