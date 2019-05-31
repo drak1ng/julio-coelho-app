@@ -74,13 +74,13 @@
 					if(email==""){ alert("O campo E-mail deve ser preenchido"); return false; }
 					if(senha==""){ alert("O campo Senha deve ser preenchido"); return false; }
 					
-					$.get("http://equipejuliocoelho.com.br/app_api/cadastro.php", { nome:nome, celular:celular, email:email, senha:senha }, function(data){
+					$.get("https://equipejuliocoelho.com.br/app_api/cadastro.php", { nome:nome, celular:celular, email:email, senha:senha }, function(data){
 						if(data=="ERRO_CELULAR"){
 							alert("Esse E-mail já foi utilizado em outro cadastro!");
 						}else if(data=="ERRO_IDADE"){
 							alert("Você precisa ser maior de 16 anos para se cadastrar!");
 						}else{
-							$.get("http://equipejuliocoelho.com.br/app_api/login.php", { email:email, senha:senha }, function(data){
+							$.get("https://equipejuliocoelho.com.br/app_api/login.php", { email:email, senha:senha }, function(data){
 								var res = data.split(";");
 								window.localStorage.setItem('id_usuarios',res[0]);
 								window.localStorage.setItem('nome_usuarios',res[1]);

@@ -68,7 +68,7 @@
 					$('.perfil-topo').css('background-image','url('+foto_usuarios+')');
 				}
 				
-				$.get("http://equipejuliocoelho.com.br/app_api/avaliacao-interna.php", { id_usuarios:id_usuarios, treino_id:treino_id }, function(data){ $("#avaliacao-interna-conteudo").html(data); });
+				$.get("https://equipejuliocoelho.com.br/app_api/avaliacao-interna.php", { id_usuarios:id_usuarios, treino_id:treino_id }, function(data){ $("#avaliacao-interna-conteudo").html(data); });
 				
 				$('.perfil-topo').click(function(){ $.mobile.changePage("preferencias.html", { transition: "fade", changeHash: false }); });
 				$('.btmenu-topo').click(function(){ $('#menu_lateral').show(); });
