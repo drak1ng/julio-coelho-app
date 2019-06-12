@@ -2,8 +2,8 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "br.com.equipejuliocoelho.app"
-	versionCode="101" 
-	version   = "1.0.1">
+	versionCode="102" 
+	version   = "1.0.2">
 	<name>Julio Coelho</name>
 	<description>
 		Equipe Julio Coelho
