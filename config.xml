@@ -2,8 +2,8 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "br.com.equipejuliocoelho.app"
-	versionCode="102" 
-	version   = "1.0.2">
+	versionCode="103" 
+	version   = "1.0.3">
 	<name>Julio Coelho</name>
 	<description>
 		Equipe Julio Coelho
@@ -112,11 +112,23 @@
 	<gap:plugin name="cordova-plugin-camera" source="npm" />
 	<gap:plugin name="cordova-plugin-ios-camera-permissions" source="npm" />
 	
-<plugin name="cordova-plugin-media-capture" source="npm" spec="*">
-  <variable name="CAMERA_USAGE_DESCRIPTION" value="App would like to access the camera." />
-  <variable name="MICROPHONE_USAGE_DESCRIPTION" value="App would like to access the microphone." />
-  <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library." />
-</plugin>
+	<plugin name="cordova-plugin-media-capture" source="npm" spec="*">
+	  <variable name="CAMERA_USAGE_DESCRIPTION" value="Para tirar uma nova fotos para o seu perfil, precisamos de acesso a camera de seu celular." />
+	  <variable name="MICROPHONE_USAGE_DESCRIPTION" value="Precisamos de acesso ao microfone para gravar sons." />
+	  <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Para alterar a foto do seu perfil, precisamos de acesso a galeria de fotos do seu celular." />
+	</plugin>
+	
+	<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+	    <string>Para tirar uma nova fotos para o seu perfil, precisamos de acesso a camera de seu celular.</string>
+	</edit-config>
+	
+	<edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
+	    <string>Precisamos de acesso ao microfone para gravar sons.</string>
+	</edit-config>
+	
+	<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+	    <string>Para alterar a foto do seu perfil, precisamos de acesso a galeria de fotos do seu celular.</string>
+	</edit-config>
 	
 	
 	<!-- Teclado sobrepondo para o android, igual iphone -->
