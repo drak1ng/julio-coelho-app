@@ -56,7 +56,7 @@
 				<div class="menu-lateral-item" id="menu-agenda"><i class="fal fa-table"></i>Planilha de Treino</div>
 				<div class="menu-lateral-item" id="menu-mensagens"><i class="fal fa-newspaper"></i>Boletins</div>
 				<div class="menu-lateral-item" id="menu-aniversarios"><i class="fal fa-birthday-cake"></i>Aniversariantes do Mês</div>
-				<div class="menu-lateral-item" id="menu-provas"><i class="fal fa-medal"></i>Provas</div>
+				<div class="menu-lateral-item" id="menu-provas"><i class="fal fa-medal"></i>Loja Virtual</div>
 				<div class="menu-lateral-item" id="menu-calculadora">
 					<i class="fal fa-calculator-alt"></i> Calculadoras
 					<div style="margin:20px -20px -20px -20px; background-color:rgba(0,0,0,0.05); display:none;" id="submenu-calculadora">
@@ -67,6 +67,7 @@
 					</div>
 				</div>
 				<div class="menu-lateral-item" id="menu-avaliacao"><i class="fal fa-user-md"></i>Avaliação Física</div>
+				<div class="menu-lateral-item" id="menu-contato"><i class="fal fa-user-md"></i>Fale Conosco</div>
 				<div class="menu-lateral-item" id="menu-preferencias"><i class="fal fa-cogs"></i>Preferências</div>
 		    </div>
 		    <div style="background-color:rgba(0,0,0,0.8); position:fixed; top:0px; right:0px; width:calc(100% - 280px); height:100%; z-index:99999;" id="fechar_menu"></div>
@@ -94,6 +95,7 @@
 				$('#menu-imc').click(function(){ $('#menu_lateral').hide(); $.mobile.changePage("calculadora-imc.html", { transition: "none", changeHash: false }); });
 				$('#menu-avaliacao').click(function(){ $('#menu_lateral').hide(); $.mobile.changePage("avaliacao.html", { transition: "none", changeHash: false }); });
 				$('#menu-preferencias').click(function(){ $('#menu_lateral').hide(); $.mobile.changePage("preferencias.html", { transition: "none", changeHash: false }); });
+				$('#menu-contato').click(function(){ $('#menu_lateral').hide(); $.mobile.changePage("contato.html", { transition: "none", changeHash: false }); });
 				
 				
 				$('#fechar_menu').click(function(){ $('#menu_lateral').hide(); });
